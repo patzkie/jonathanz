@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Section styles */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+   background: url(images/background.png);
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+}
+
+.signUp-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 450px;
+    height: 750px;
+ 
+    background: rgba(225, 225, 225, 0.04);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(15px);
+ 
+}
+
+.signUp-box .header-signUp{
+    position: absolute;
+    top: 20px; 
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.header-signUp h2{
+    font-size: 1.5em;
+}
+.header-signUp p{
+    position: absolute;
+    top: 80px; 
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.6em;
+    color: #fff;
+}
+
+.textbox{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;  
+}
+
+.textbox label{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s ;
+}
+
+.textbox input:focus~label,
+.textbox input:valid~label{
+    top: -9px;
+}
+
+.textbox input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+        
+    padding:0 8px 0 5px;
+}
+
+.textbox .icon{
+    position: absolute;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 5px;
+    right: 8px;
+}
+
+
+/* Button styles */
+button {
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    background-color: #FFDB54; /* This sets the gold color */
+    border: none;
+    outline: none;
+    border-radius: 40px; /* This sets the rounded corners */
+    color: #000000;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  
+  button:hover {
+    background: #f4e98bfc; /* This changes the background on hover */
+    transform: scale(1.05, 1); /* This adds a slight zoom on hover */
+  }
+
+.login{
+
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0  10px;
+}
+
+.login p a {
+    color: #FFDB54;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+
+/*forgot password*/
+
+.form{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 350px;
+    height: 400px;
+ 
+    background: rgba(225, 225, 225, 0.04);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(15px);
+ 
+}
+.header-forgotpass{
+    position: absolute;
+    top: 20px; 
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;   
+    color: #fff;
+}
+.header-forgotpass  h2{
+    font-size: 1.5em;  
+}
+.txt-email{
+    position: relative;
+    width: 280px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;  
+}
+
+.txt-email label{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s ;
+}
+
+.txt-email input:focus~label,
+.txt-email input:valid~label{
+    top: -9px;
+}
+
+.txt-email input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+        
+    padding:0 8px 0 5px;
+}
+
+.txt-email .icon{
+    position: absolute;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 5px;
+    right: 8px;
+}
+
+/*reset password style*/
+
+.header-resetpass{
+    position: absolute;
+    top: 20px; 
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;   
+    color: #fff;
+   
+}
+
+
+/*Successfull Password Reset Style*/
+.success-header{
+    
+    top: 20px;   
+    left: 0;
+    margin: auto;
+    right: 0;
+    text-align: center;
+    font-size: 0.8em;   
+    color: #fff;
+    padding: 10px 0;
+    
+}
+
+.success-header p{  
+  
+    font-size: 1.2em;   
+
+    
+}
+
+/*login style
+/* Heading styles */
+
+/*Login page
+
+/* Login box styles */
+
+.login-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 590px;
+    height: 800px;
+ 
+    background: rgba(225, 225, 225, 0.04);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,.5);
+
+
+    /* if want mo na nasa left side sya*/
+   /* top: 50%;
+    right: 180px;
+    flex-direction: column;
+    transform: translateY(-50%);  /* Adjust horizontal margin as needed */
+    /*align-items: center;*/
+
+
+    backdrop-filter: blur(15px);
+    
+   
+}
+h2{
+ 
+    position: absolute;
+    top: 20px; /* Position 30px from the top of .login-box */
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    
+}
+
+/* Input box styles */
+.input-box{
+    position: relative;
+    width: 400px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;   
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s ;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+        
+    padding:0 8px 0 5px;
+
+}
+
+.input-box .icon{
+    position: absolute;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+    right: 8px;
+
+}
+
+
+/* Remember and forgot styles */
+
+.remember-forgot{
+    margin:-5px  0 15px;
+    font-size: .9em;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    margin-right: 3px;  
+}
+.remember-forgot a{
+    color: #FFDB54;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+
+.sign-up{
+
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0  10px;
+}
+
+.sign-up p a {
+    color: #FFDB54;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sign-up p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*dito lng  ako nag  bago pababa then ung  length ng  email line */
+
+
+
+
+.access-numbers {
+    
+    color: yellow;
+    padding: 10px;
+  }
+
+  .access-email {
+    
+    margin-top: 20px;
+    color: yellow;
+    padding: 10px;
+  }
+
+  .our-contact, .Email-us{
+    margin-top: 15px;
+    color: white;
+  }
+
+
+.placement{
+    margin-top: 50px;
+}
+
+.non-blue-link {
+    color: white; /* Change to your desired color */
+    text-decoration: none; /* Removes underline */
+  }
+
+  .wpcf7-textarea {
+    width: 100%; /* Makes the textarea fill the available width */
+    min-height: 200px; /* Sets a minimum height for the textarea */
+    border: 1px solid #ccc; /* Adds a border */
+    border-radius: 5px; /* Adds rounded corners */
+    padding: 10px; /* Adds padding around the text */
+    font-size: 16px; /* Sets the font size */
+    font-family: Arial, sans-serif; /* Sets the font family */
+  }
+ 
